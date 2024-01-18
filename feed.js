@@ -1,6 +1,6 @@
 const productsContainer = document.getElementById('products-container');
 
-fetch('explore.json')
+fetch('feed.json')
   .then(response => response.json())
   .then(products => {
     products.forEach(product => {
