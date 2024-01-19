@@ -1,4 +1,4 @@
-const productsContainer = document.getElementById('products-container');
+const trendsContainer = document.getElementById('products-container');
 
 fetch('trends.json')
   .then(response => response.json())
@@ -28,7 +28,7 @@ fetch('trends.json')
         <a <button="" href="${product.url}   type=" button"="" style="height: 45px;padding: 0px;text-decoration: none;color: white;text-align: center;display: inline-flex;margin-left: auto;margin-top: -45px;">
            <img alt="Image description" style="height: 30px;" src="https://i.postimg.cc/fbgg9FHp/ariaplus-blue-square-full-back1.jpg"> <p class="like-number" style="padding: 0px;margin: 0px;width: 100%;display: flex;margin-left: 5px;margin-top: 7px;font-weight: 600;"> ${product.likes} </p></a>
       `;
-      productsContainer.appendChild(productElement);
+      trendsContainer.appendChild(productElement);
     });
   })
   .catch(error => console.error('Error fetching products:', error));
