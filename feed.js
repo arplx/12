@@ -17,7 +17,7 @@ fetch('feed.json')
         <a class="timestamp" href="${product.timestamp}" _blank"="" style="font-size: 100px;text-decoration: none;color: white;margin-left: 40px;display: flex;margin-bottom: 5px;">
           <h2 style="opacity: 80%;font-size: 10px;padding: 0px;margin: 0px;">${product.time}</h2>
         </a>
-        <img src="${product.image}" style="width: 500px;height: 500px;object-fit: cover;object-position: top;border-radius: 10px;">
+        <img src="${product.image}" style="border-radius: 10px;box-sizing: border-box;width: -moz-available;object-fit: cover;object-position: top;height: 10%;">
         <p>${product.description}</p>
         <a <button="" href="${product.url} type=" button"="" style="padding: 0px;text-decoration: none;color: white;text-align: center;display: inline-flex;margin-top: auto;">
            <img alt="Image description" style="height: 30px;padding-right: 5px;margin-top: 17px;" src="https://i.postimg.cc/fbgg9FHp/ariaplus-blue-square-full-back1.jpg"> <p class="like-number" style="padding: 0px;margin: 0px;width: 100%;display: flex;margin-left: ;margin-top: 23px;font-weight: 600;font-size: 15px;"> ${product.likes} </p></a>
