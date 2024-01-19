@@ -7,11 +7,11 @@ body {
 }
 
 .product {
-  width: 500px;
+  width: auto;
   background: black;
   padding: 20px;
   margin: 0px;
-    margin-bottom: 0px;
+  margin-bottom: 0px;
   color: white;
   font-family: helvetica;
   height: fit-content;
