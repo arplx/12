@@ -1,21 +1,20 @@
-const productsContainer = document.getElementById('products-container');
+const trends = document.getElementById('trends-container');
 
 fetch('trends.json')
   .then(response => response.json())
-  .then(products => {
-    products.forEach(product => {
-      const productElement = document.createElement('div');
-      productElement.classList.add('product');
-      productElement.innerHTML = `
+  .then(trends => {
+    trends.forEach(trends => {
+      const trendsElement = document.createElement('div');
+      trendsElement.classList.add('trends');
+      trendsElement.innerHTML = `
       <div class="trending-box">
-          <p class="trending-heading">${product.category}</p>
-          <p class="trending-text">${product.hashtag}</p>
-          <p class="trending-heading">${product.postnumber}</p>
+          <p class="trending-heading">${trends.category}</p>
+          <p class="trending-text">${trends.hashtag}</p>
+          <p class="trending-heading">${trends.postnumber}</p>
         </div>
-       
-         
+                
          `;
-      productsContainer.appendChild(productElement);
+      trends.appendChild(trendsElement);
     });
   })
-  .catch(error => console.error('Error fetching products:', error));
+  .catch(error => console.error('Error fetching trends:', error));
