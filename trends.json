@@ -1,7 +1,10 @@
 [
   {
-    "category": "1 · Entertainment · Trending",
-    "hastag": "#theworldtocome",
-    "postnumber": "120K Posts"
+    "name": "#trend1",
+    "tweet_volume": 1000
+  },
+  {
+    "name": "#trend2",
+    "tweet_volume": 2000
   }
 ]
