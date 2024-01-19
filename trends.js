@@ -1,4 +1,4 @@
-const trendsContainer = document.getElementById('products-container');
+const trendsContainer = document.getElementById('trends-container');
 
 fetch('trends.json')
   .then(response => response.json())
