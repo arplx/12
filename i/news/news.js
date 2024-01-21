@@ -7,8 +7,8 @@ fetch('https://arplx.github.io/12/i/news/news.json')
       const nElement = document.createElement('div');
       nElement.classList.add('trends');
       nElement.innerHTML = `
-          <p class="trending-heading">${n.name}</p>
-          <p class="trending-text">${n.hastag}</p>
+          <p class="trending-heading">${n.publication}</p>
+          <p class="trending-text">${n.headline}</p>
           <p class="trending-heading">${n.numberposts}</p>
       `;
       newsContainer.appendChild(nElement);
