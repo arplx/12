@@ -7,8 +7,8 @@ fetch('https://arplx.github.io/12/i/trends/trends.json')
       const trendElement = document.createElement('div');
       trendElement.classList.add('trends');
       trendElement.innerHTML = `
-          <p class="trending-heading">${trend.name}</p>
-          <p class="trending-text">${trend.hastag}</p>
+          <p class="trending-heading">${trend.publication}</p>
+          <p class="trending-text">${trend.headline}</p>
           <p class="trending-heading">${trend.numberposts}</p>
       `;
       trendsContainer.appendChild(trendElement);
